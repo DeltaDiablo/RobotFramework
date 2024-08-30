@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240829 17:24:04.120" rpa="false" schemaversion="3">
+<suite id="s1" name="Website Inspection" source="D:\development\RobotFramework\pythonProject-1\Tests\Website_Inspection.robot">
+<test id="s1-t1" name="Website Inspection in firefox" line="13">
+<kw name="Open" library="Common" type="SETUP">
+<tag>firefox Browser open</tag>
+<doc>Opening a firefox Browser Instance at maximum size</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240829 17:24:05.001" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20240829 17:24:10.076" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240829 17:24:10.076" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20240829 17:24:05.000" endtime="20240829 17:24:10.172"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Case 1 open Browser Test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240829 17:24:10.173" endtime="20240829 17:24:10.173"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240829 17:24:10.173" endtime="20240829 17:24:10.173"/>
+</kw>
+<status status="FAIL" starttime="20240829 17:24:04.999" endtime="20240829 17:24:10.174"/>
+</kw>
+<kw name="Close" library="Common" type="TEARDOWN">
+<tag>firefox browser Closed</tag>
+<doc>Closing a firefox browser Instance when Testing is done</doc>
+<kw name="Log" library="BuiltIn">
+<arg>Close Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240829 17:24:10.175" level="INFO">Close Browser</msg>
+<status status="PASS" starttime="20240829 17:24:10.175" endtime="20240829 17:24:10.175"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240829 17:24:10.175" endtime="20240829 17:24:10.175"/>
+</kw>
+<status status="PASS" starttime="20240829 17:24:10.175" endtime="20240829 17:24:10.175"/>
+</kw>
+<status status="FAIL" starttime="20240829 17:24:04.998" endtime="20240829 17:24:10.177">Setup failed:
+SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<status status="FAIL" starttime="20240829 17:24:04.123" endtime="20240829 17:24:10.179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Website Inspection">Website Inspection</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

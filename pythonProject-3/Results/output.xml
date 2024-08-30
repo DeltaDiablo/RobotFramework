@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230113 15:34:21.926" rpa="false" schemaversion="3">
+<suite id="s1" name="pythonProject-3" source="D:\development\robot-scripts\Scripts\pythonProject-3">
+<suite id="s1-s1" name="Tests" source="D:\development\robot-scripts\Scripts\pythonProject-3\Tests">
+<suite id="s1-s1-s1" name="Front End Test" source="D:\development\robot-scripts\Scripts\pythonProject-3\Tests\Front_End_Test.robot">
+<test id="s1-s1-s1-t1" name="1. Should be able to Navigate to landing page" line="20">
+<kw name="Begin Web Test" library="CommonWeb" type="SETUP">
+<kw name="open browser">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20230113 15:34:22.032" level="FAIL">No keyword with name 'open browser' found.</msg>
+<status status="FAIL" starttime="20230113 15:34:22.028" endtime="20230113 15:34:22.032"/>
+</kw>
+<kw name="maximize browser window">
+<status status="NOT RUN" starttime="20230113 15:34:22.035" endtime="20230113 15:34:22.037"/>
+</kw>
+<status status="FAIL" starttime="20230113 15:34:22.025" endtime="20230113 15:34:22.038"/>
+</kw>
+<kw name="End Web Test" library="CommonWeb" type="TEARDOWN">
+<kw name="close browser">
+<msg timestamp="20230113 15:34:22.045" level="FAIL">No keyword with name 'close browser' found.</msg>
+<status status="FAIL" starttime="20230113 15:34:22.041" endtime="20230113 15:34:22.046"/>
+</kw>
+<status status="FAIL" starttime="20230113 15:34:22.040" endtime="20230113 15:34:22.048">No keyword with name 'close browser' found.</status>
+</kw>
+<doc>This is a test for Landing Page in chrome</doc>
+<tag>1. Test Landing page in chrome</tag>
+<status status="FAIL" starttime="20230113 15:34:22.023" endtime="20230113 15:34:22.048">Setup failed:
+No keyword with name 'open browser' found.
+
+Also teardown failed:
+No keyword with name 'close browser' found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="2. &quot;Team&quot; page should match requirements" line="27">
+<kw name="Begin Web Test" library="CommonWeb" type="SETUP">
+<kw name="open browser">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20230113 15:34:22.057" level="FAIL">No keyword with name 'open browser' found.</msg>
+<status status="FAIL" starttime="20230113 15:34:22.055" endtime="20230113 15:34:22.057"/>
+</kw>
+<kw name="maximize browser window">
+<status status="NOT RUN" starttime="20230113 15:34:22.063" endtime="20230113 15:34:22.064"/>
+</kw>
+<status status="FAIL" starttime="20230113 15:34:22.053" endtime="20230113 15:34:22.067"/>
+</kw>
+<kw name="End Web Test" library="CommonWeb" type="TEARDOWN">
+<kw name="close browser">
+<msg timestamp="20230113 15:34:22.071" level="FAIL">No keyword with name 'close browser' found.</msg>
+<status status="FAIL" starttime="20230113 15:34:22.069" endtime="20230113 15:34:22.071"/>
+</kw>
+<status status="FAIL" starttime="20230113 15:34:22.068" endtime="20230113 15:34:22.073">No keyword with name 'close browser' found.</status>
+</kw>
+<doc>This is a test for sub page Team in chrome</doc>
+<tag>2. Test for Team page in chrome</tag>
+<status status="FAIL" starttime="20230113 15:34:22.051" endtime="20230113 15:34:22.074">Setup failed:
+No keyword with name 'open browser' found.
+
+Also teardown failed:
+No keyword with name 'close browser' found.</status>
+</test>
+<doc>Basic Test Suite for web application testing</doc>
+<status status="FAIL" starttime="20230113 15:34:21.973" endtime="20230113 15:34:22.077"/>
+</suite>
+<status status="FAIL" starttime="20230113 15:34:21.969" endtime="20230113 15:34:22.080"/>
+</suite>
+<status status="FAIL" starttime="20230113 15:34:21.940" endtime="20230113 15:34:22.082"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">1. Test Landing page in chrome</stat>
+<stat pass="0" fail="1" skip="0">2. Test for Team page in chrome</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="pythonProject-3">pythonProject-3</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Tests">pythonProject-3.Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="Front End Test">pythonProject-3.Tests.Front End Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230113 15:34:22.000" level="ERROR">Error in file 'D:\development\robot-scripts\Scripts\pythonProject-3\Resources\Objects\Landing.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\development\robot-scripts\Scripts\pythonProject-3\lib
+  D:\development\robot-scripts\Scripts\pythonProject-3\resources
+  D:\Program Files\Python\python311.zip
+  D:\Program Files\Python\Lib
+  D:\Program Files\Python\DLLs
+  D:\Program Files\Python
+  D:\Program Files\Python\Lib\site-packages
+  C:\Users\delta\.vscode\extensions\d-biehl.robotcode-0.22.0</msg>
+<msg timestamp="20230113 15:34:22.007" level="ERROR">Error in file 'D:\development\robot-scripts\Scripts\pythonProject-3\Resources\Objects\TopNav.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\development\robot-scripts\Scripts\pythonProject-3\lib
+  D:\development\robot-scripts\Scripts\pythonProject-3\resources
+  D:\Program Files\Python\python311.zip
+  D:\Program Files\Python\Lib
+  D:\Program Files\Python\DLLs
+  D:\Program Files\Python
+  D:\Program Files\Python\Lib\site-packages
+  C:\Users\delta\.vscode\extensions\d-biehl.robotcode-0.22.0</msg>
+<msg timestamp="20230113 15:34:22.014" level="ERROR">Error in file 'D:\development\robot-scripts\Scripts\pythonProject-3\Resources\Objects\Team.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\development\robot-scripts\Scripts\pythonProject-3\lib
+  D:\development\robot-scripts\Scripts\pythonProject-3\resources
+  D:\Program Files\Python\python311.zip
+  D:\Program Files\Python\Lib
+  D:\Program Files\Python\DLLs
+  D:\Program Files\Python
+  D:\Program Files\Python\Lib\site-packages
+  C:\Users\delta\.vscode\extensions\d-biehl.robotcode-0.22.0</msg>
+<msg timestamp="20230113 15:34:22.019" level="ERROR">Error in file 'D:\development\robot-scripts\Scripts\pythonProject-3\Resources\CommonWeb.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\development\robot-scripts\Scripts\pythonProject-3\lib
+  D:\development\robot-scripts\Scripts\pythonProject-3\resources
+  D:\Program Files\Python\python311.zip
+  D:\Program Files\Python\Lib
+  D:\Program Files\Python\DLLs
+  D:\Program Files\Python
+  D:\Program Files\Python\Lib\site-packages
+  C:\Users\delta\.vscode\extensions\d-biehl.robotcode-0.22.0</msg>
+</errors>
+</robot>

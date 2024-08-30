@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240829 17:25:04.135" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotFramework" source="D:\development\RobotFramework">
+<suite id="s1-s1" name="pythonProject-1" source="D:\development\RobotFramework\pythonProject-1">
+<suite id="s1-s1-s1" name="Tests" source="D:\development\RobotFramework\pythonProject-1\Tests">
+<suite id="s1-s1-s1-s1" name="Website Inspection" source="D:\development\RobotFramework\pythonProject-1\Tests\Website_Inspection.robot">
+<test id="s1-s1-s1-s1-t1" name="Website Inspection in firefox" line="13">
+<kw name="Open" library="Common" type="SETUP">
+<tag>firefox Browser open</tag>
+<doc>Opening a firefox Browser Instance at maximum size</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240829 17:25:04.398" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20240829 17:25:08.580" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240829 17:25:08.582" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20240829 17:25:04.396" endtime="20240829 17:25:08.591"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Case 1 open Browser Test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240829 17:25:08.593" endtime="20240829 17:25:08.594"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240829 17:25:08.594" endtime="20240829 17:25:08.595"/>
+</kw>
+<status status="FAIL" starttime="20240829 17:25:04.395" endtime="20240829 17:25:08.596"/>
+</kw>
+<kw name="Close" library="Common" type="TEARDOWN">
+<tag>firefox browser Closed</tag>
+<doc>Closing a firefox browser Instance when Testing is done</doc>
+<kw name="Log" library="BuiltIn">
+<arg>Close Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240829 17:25:08.600" level="INFO">Close Browser</msg>
+<status status="PASS" starttime="20240829 17:25:08.598" endtime="20240829 17:25:08.600"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240829 17:25:08.600" endtime="20240829 17:25:08.602"/>
+</kw>
+<status status="PASS" starttime="20240829 17:25:08.597" endtime="20240829 17:25:08.602"/>
+</kw>
+<status status="FAIL" starttime="20240829 17:25:04.392" endtime="20240829 17:25:08.603">Setup failed:
+SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<status status="FAIL" starttime="20240829 17:25:04.177" endtime="20240829 17:25:08.608"/>
+</suite>
+<status status="FAIL" starttime="20240829 17:25:04.174" endtime="20240829 17:25:08.613"/>
+</suite>
+<status status="FAIL" starttime="20240829 17:25:04.171" endtime="20240829 17:25:08.618"/>
+</suite>
+<status status="FAIL" starttime="20240829 17:25:04.153" endtime="20240829 17:25:08.621"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="pythonProject-1">RobotFramework.pythonProject-1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">RobotFramework.pythonProject-1.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Website Inspection">RobotFramework.pythonProject-1.Tests.Website Inspection</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
